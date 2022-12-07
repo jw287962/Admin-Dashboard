@@ -83,16 +83,18 @@ button{
 .intro{
     display: flex;
     font-weight: bold;
+    justify-content: flex-start;
+    align-items: center;
 }
 .intro h3{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 img{
     background-color: black;
     border-radius: 50%;
     margin: 0px 10px;
-    
+    border: 1px solid #000000; 
   }
   .notifications {
    display: flex;
@@ -146,7 +148,7 @@ img{
 
 .annouced,.trending{
     display: grid;
-    padding: 0px; 
+    padding: 20px 0px; 
     
   }
 
@@ -169,8 +171,23 @@ img{
  .annouced .card h3,  .annouced .card p, .trending .person p{
     font-size: 13px;
  }
- 
- 
+ .card{
+    display: flex;
+    flex-direction: column;
+
+ }
+ p{
+      flex: 1;
+}
+
+ .cardbuttons{
+    display: flex;
+    justify-content: flex-end;
+  
+}
+.cardbuttons span{
+    margin-left: 10px;
+}
 
 
 
@@ -182,12 +199,12 @@ form{
   
 }
  input{
-    border-radius: 5px;
+    border-radius: 15px;
     background-color:var(--bgcolor);
     border: none;
      margin-left: 10px;
      width: 95%;
-
+    padding: 0px 10px;
  }
 
 .person p, .annouced p, .projects p{
@@ -253,3 +270,4 @@ button{
     color: white;
     font-weight: bold;
 }
+
