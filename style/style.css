@@ -90,12 +90,15 @@ button{
     font-size: 25px;
 }
 
-img{
+.notifications img, .intro img{
     background-color: black;
-    border-radius: 50%;
+   
     margin: 0px 10px;
     border: 1px solid #000000; 
   }
+img{
+    border-radius: 50%;
+}
   .notifications {
    display: flex;
  align-items: center;
@@ -168,14 +171,17 @@ img{
     border-radius: 0px;
   
   }
- .annouced .card h3,  .annouced .card p, .trending .person p{
+  /* FONT FOR A LOT OF STUFF */
+ .annouced .card h3,  .annouced .card p, .trending .person p,.trending .person h3{
     font-size: 13px;
  }
+
  .card{
     display: flex;
     flex-direction: column;
-
+   
  }
+ 
  p{
       flex: 1;
 }
@@ -188,7 +194,17 @@ img{
 .cardbuttons span{
     margin-left: 10px;
 }
-
+.person{
+    display: flex;   
+}
+.person img{
+    height: 50px; 
+    
+    
+}
+.person span{
+    width: 70px;
+}
 
 
  /* misc looks */
